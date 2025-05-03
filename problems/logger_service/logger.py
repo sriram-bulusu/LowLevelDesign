@@ -39,10 +39,18 @@ class Logger:
                 print(formatted)
 
     # convenience test functions
-    def debug(self, msg): self.log(LogLevel.DEBUG, msg)
-    def info(self, msg): self.log(LogLevel.INFO, msg)
-    def warning(self, msg): self.log(LogLevel.WARNING, msg)
-    def error(self, msg): self.log(LogLevel.ERROR, msg)
+    def debug(self, msg): 
+        self.log(LogLevel.DEBUG, msg)
+    
+    def info(self, msg): 
+        self.log(LogLevel.INFO, msg)
+    
+    def warning(self, msg): 
+        self.log(LogLevel.WARNING, msg)
+    
+    def error(self, msg): 
+        self.log(LogLevel.ERROR, msg)
+    
 
 # these two loggers are going to point to the same instance
 logger1 = Logger(log_file="app.log", level=LogLevel.DEBUG)
