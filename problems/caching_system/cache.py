@@ -4,7 +4,7 @@ class Node:
         self.val = val
         self.head, self.tail = None, None
 
-class LRUCache:
+class Cache:
     def __init__(self, capacity: int):
         self.capacity = capacity
         self.cache = {}
